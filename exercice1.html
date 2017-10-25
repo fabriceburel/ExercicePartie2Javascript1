@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+      <img src="image1.jpg" id="image1"/> <!--onmouseover="this.src='image1_2.jpg'" -->
+  <script> // ce script javascript est equivalent à écrire dans le fichier html
+  // <img src="image1.jpg"  onmouseover="this.src='image1_2.jpg'" id="image1"/>
+  var image = document.getElementById('image1'), image2 = new Image();
+  image.addEventListener('mouseover', function(){
+    image.setAttribute('src','image1_2.jpg');
+    //alert('bonjour'); // test d'affichage de message au survol de l'image
+  });
+</script>
+  </body>
+
+</html>
